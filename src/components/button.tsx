@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 import { Slot } from '@radix-ui/react-slot';
-import { ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 
 export interface ButtonIconProps {
@@ -17,7 +17,7 @@ function ButtonIcon({children}: ButtonIconProps) {
 
 ButtonIcon.displayName = 'Button.Icon'
 
-export interface ButtonRootProps {
+export interface ButtonRootProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: 'default' | 'outline' | 'naked';
   asChild?: boolean;
