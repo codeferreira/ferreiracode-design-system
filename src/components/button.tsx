@@ -23,7 +23,7 @@ export interface ButtonRootProps extends ButtonHTMLAttributes<HTMLButtonElement>
   asChild?: boolean;
 }
 
-function ButtonRoot({ variant = 'default', children, asChild = false }: ButtonRootProps) {
+function ButtonRoot({ variant = 'default', children, asChild = false, ...props }: ButtonRootProps) {
   const Component = asChild ? Slot : 'button'
 
   return (
@@ -36,6 +36,7 @@ function ButtonRoot({ variant = 'default', children, asChild = false }: ButtonRo
           variant === 'naked' && 'bg-transparent text-purple-700 hover:bg-transparent hover:text-purple-800'
         )
       }
+      {...props}
     >
       {children}
     </Component>
