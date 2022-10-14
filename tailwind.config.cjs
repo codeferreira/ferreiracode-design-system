@@ -14,6 +14,7 @@ module.exports = {
       '3xl': 48,
     },
     colors: {
+      transparent: 'transparent',
       black: '#000',
       white: '#fff',
       purple: {
