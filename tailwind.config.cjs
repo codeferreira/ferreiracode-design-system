@@ -16,12 +16,16 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       black: '#000',
-      white: '#fff',
+      white: '#FFF',
       purple: {
         100: '#E7D7F0',
+        200: '#837A9D',
         400: '#675C87',
         700: '#563373',
         800: '#381B50'
+      },
+      gray: {
+        100: '#F4F4F4',
       }
     },
     extend: {
